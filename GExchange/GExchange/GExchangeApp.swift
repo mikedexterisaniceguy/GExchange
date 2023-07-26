@@ -11,7 +11,9 @@ import SwiftUI
 struct GExchangeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                MainScreenView()
+            }
         }
     }
 }

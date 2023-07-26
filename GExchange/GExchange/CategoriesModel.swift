@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+enum Category {
+    case clothes
+    case shoes
+    case householdGoods
+    case electronics
+    case otherItems
+}

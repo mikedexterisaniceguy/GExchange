@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct GoodsView: View {
+    
+    @State private var items: [GoodsItem] = [
+        GoodsItem(image: "house.fill", name: "puppet", category: .clothes, descriptin: "This is just a description for my List"),
+        GoodsItem(image: "house.fill", name: "puppet", category: .clothes, descriptin: "This is just a description for my List"),
+        GoodsItem(image: "house.fill", name: "puppet", category: .clothes, descriptin: "This is just a description for my List")
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(items, id: \.self) { item in
+                HStack {
+                    Image(systemName: item.image)
+                    VStack {
+                        Text(item.name)
+                        Text(item.descriptin)
+                    }
+                }
+                
+            }
+        }
     }
 }
 

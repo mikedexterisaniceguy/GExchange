@@ -13,7 +13,7 @@ struct MainScreenView: View {
     
     var body: some View {
         TabView(selection: $selectTabView) {
-            Text("Main view")
+            OverviewView()
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
@@ -38,7 +38,6 @@ struct MainScreenView: View {
                 }
                 .tag(3)
         }
-        .accentColor(.red)
     }
 }
 
