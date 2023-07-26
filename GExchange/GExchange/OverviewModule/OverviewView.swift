@@ -1,0 +1,20 @@
+//
+//  OverviewView.swift
+//  GExchange
+//
+//  Created by 123 on 26.07.23.
+//
+
+import SwiftUI
+
+struct OverviewView: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+struct OverviewView_Previews: PreviewProvider {
+    static var previews: some View {
+        OverviewView()
+    }
+}
