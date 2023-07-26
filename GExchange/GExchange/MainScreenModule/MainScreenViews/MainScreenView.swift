@@ -19,7 +19,7 @@ struct MainScreenView: View {
                     Text("Home")
                 }
                 .tag(0)
-            Text("Goods")
+            GoodsView()
                 .tabItem {
                     Image(systemName: "star.fill")
                     Text("Goods")
